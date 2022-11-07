@@ -1,0 +1,20 @@
+.list-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.list-title {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+.movie-list-container {
+  background: linear-gradient(rgb(1, 1, 1), rgb(32, 3, 3), rgb(1, 0, 0));
+  color: whitesmoke;
+}
+/* responsive */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .list-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}

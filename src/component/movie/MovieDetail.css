@@ -1,0 +1,98 @@
+p {
+  font-weight: bolder;
+}
+.movie-title {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.movie-poster {
+  width: 400px;
+  height: 600px;
+}
+.poster-container {
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgb(1, 1, 1), rgb(32, 3, 3), rgb(1, 0, 0));
+}
+.movie-datail-page {
+  /* background-color: black; */
+  color: whitesmoke;
+  height: 100vh;
+  background: linear-gradient(rgb(1, 1, 1), rgb(32, 3, 3), rgb(1, 0, 0));
+}
+.movie-detail-header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(black, rgba(151, 8, 8, 0.393));
+}
+.movie-detail-desc {
+  background: linear-gradient(rgba(81, 9, 9, 0.635), black);
+}
+.movie-detail-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 60px;
+}
+
+.movie-trailer {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .movie-title {
+    font-size: 2rem;
+  }
+
+  .movie-datail-page {
+    display: flex;
+    justify-content: center;
+  }
+  .movie-poster {
+    width: 90vw;
+    height: 50vh;
+    border: 2px solid blue;
+  }
+  .movie-detail-container {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .movie-detail-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .movie-detail-rating h5 {
+    font-size: 0.8rem;
+  }
+
+  .movie-datail-page {
+    height: 100vh;
+  }
+  .poster-container {
+    flex-direction: column;
+    border: 2px solid gold;
+  }
+  .movie-container {
+    width: 100vw;
+  }
+  .movie-trailer {
+    position: relative;
+    width: 90vw;
+    height: 40vh;
+  }
+
+  .movie-detail-desc {
+    position: relative;
+    top: 8%;
+    width: 100vw;
+  }
+  .movie-datail-page {
+    height: 200vh;
+    background: linear-gradient(rgb(1, 1, 1), rgb(32, 3, 3), rgb(1, 0, 0));
+  }
+}

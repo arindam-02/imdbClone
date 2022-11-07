@@ -1,0 +1,68 @@
+/* .page-content {
+  background-color: black;
+  color: whitesmoke;
+} */
+
+.poster-image {
+  height: 80vh;
+}
+.poster-image-info {
+  position: absolute;
+  top: 50%;
+  color: white;
+  text-align: left;
+  margin-left: 100px;
+  z-index: 1;
+}
+.poster-title {
+  font-size: 4rem;
+  font-weight: bolder;
+  text-shadow: 5px 4px 8px rgb(7, 24, 7);
+}
+.poster-release {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 5px 4px 4px black;
+}
+.poster-rating {
+  margin: 12px;
+}
+.poster-desc {
+  width: 500px;
+  text-shadow: 5px 4px 4px black;
+}
+/* responsive */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .poster-image {
+    height: 90vh;
+    width: 100vw;
+    background-color: black;
+  }
+
+  .poster-image-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 30%;
+    text-align: center;
+    /* padding: auto;margin: auto; */
+  }
+  .poster-title {
+    font-size: 1.2rem;
+  }
+
+  .poster-release {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-shadow: 5px 4px 4px black;
+  }
+  .poster-rating {
+    margin: 12px;
+  }
+  .poster-desc {
+    width: 50vw;
+    text-shadow: 5px 4px 4px black;
+  }
+}

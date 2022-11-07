@@ -1,0 +1,9 @@
+.footer {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.footer p {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
