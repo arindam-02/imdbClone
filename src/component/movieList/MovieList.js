@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function MovieList() {
-  // const API_key = "cbe583074a04ba64db27bad20c95c928";
+  const API_key = "cbe583074a04ba64db27bad20c95c928";
   const [movieList, setMovieList] = useState([]);
   const { type } = useParams();
 
@@ -18,9 +18,9 @@ function MovieList() {
 
   const getData = () => {
     fetch(
-      `https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=${
-        process.env.REACT_APP_API_KEY
-      }&language=en-US`
+      `https://api.themoviedb.org/3/movie/${
+        type ? type : "popular"
+      }?api_key=${API_key}&language=en-US`
     )
       .then((response) => response.json())
       .then((data) => setMovieList(data.results));

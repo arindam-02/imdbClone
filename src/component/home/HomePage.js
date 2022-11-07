@@ -6,14 +6,14 @@ import { useNavigate } from "react-router-dom";
 import MovieList from "../movieList/MovieList";
 
 function HomePage() {
-  // const API_key = "cbe583074a04ba64db27bad20c95c928";
+  const API_key = "cbe583074a04ba64db27bad20c95c928";
 
   let [popularMovies, setPopularMovies] = useState([]);
   let navigate = useNavigate();
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+      `https://api.themoviedb.org/3/movie/popular?api_key=${API_key}&language=en-US`
     )
       .then((response) => response.json())
       .then((data) => setPopularMovies(data.results));
