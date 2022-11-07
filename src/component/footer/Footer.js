@@ -11,7 +11,8 @@ function Footer() {
     <>
       <div className="footer ">
         <p className="text-warning text-center m-0 pb-3">
-          Made With ❤ by Das || <span id="clk"></span>
+          Made With ❤ by Das ||
+          <span id="clk"></span>
         </p>
       </div>
     </>
