@@ -30,7 +30,7 @@ function Header() {
       showConfirmButton: true,
       timer: 1500,
     }).then(() => {
-      window.location.reload(true);
+      window.location.reload("https://keen-madeleine-38053e.netlify.app/");
     });
   };
 
