@@ -55,7 +55,6 @@ p {
   .movie-poster {
     width: 90vw;
     height: 50vh;
-    border: 2px solid blue;
   }
   .movie-detail-container {
     width: 50vw;
@@ -75,7 +74,6 @@ p {
   }
   .poster-container {
     flex-direction: column;
-    border: 2px solid gold;
   }
   .movie-container {
     width: 100vw;
@@ -94,5 +92,9 @@ p {
   .movie-datail-page {
     height: 200vh;
     background: linear-gradient(rgb(1, 1, 1), rgb(32, 3, 3), rgb(1, 0, 0));
+  }
+  .error-display {
+    font-size: 1.5rem;
+    height: 100vh;
   }
 }

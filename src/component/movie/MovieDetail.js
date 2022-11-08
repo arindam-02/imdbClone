@@ -82,11 +82,11 @@ function MovieDetails() {
                 alt="poster"
                 className="movie-poster"
               />
-              <div className="col-8 movie-trailer ">
+              <div className="col-8 movie-trailer-container ">
                 <YouTube
                   videoId={selectedMovie}
                   autoplay
-                  className="trailer-video "
+                  className="trailer-video p-lg-5 col-12"
                 />
               </div>
             </div>
@@ -98,7 +98,7 @@ function MovieDetails() {
             </div>
           </div>
         ) : (
-          <div className="d-flex justify-content-center align-items-center h-100">
+          <div className=" error-display col-12 text-center d-flex justify-content-center align-items-center ">
             <h1> Please Login to view this Page !!</h1>
           </div>
         )}

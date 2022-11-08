@@ -9,7 +9,7 @@ function Footer() {
 
   return (
     <>
-      <div className="footer ">
+      <div className="col-12 footer ">
         <p className="text-warning text-center m-0 pb-3">
           Made With ❤ by Das ||
           <span id="clk"></span>

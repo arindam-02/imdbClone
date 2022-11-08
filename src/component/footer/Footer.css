@@ -2,8 +2,19 @@
   background-color: black;
   margin: 0;
   padding: 0;
+  position: relative;
+  bottom: 0;
 }
 .footer p {
   font-weight: normal;
   font-size: 0.8rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footer {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+  }
 }
